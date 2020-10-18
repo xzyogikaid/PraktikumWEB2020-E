@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=ta, initial-scale=1.0">
+    <title> PBW2020-Pertemuan5-kelas E </title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <style>
+        html, body {
+      display: flex;
+      justify-content: center;
+      height: 100%;
+      }
+      body, div, h1, form,input,p  { 
+      padding: 0;
+      margin: 0;
+      outline: none;
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 16px;
+      color: #666;
+      }
+      
+     form {
+      margin: 0 60px;
+      }
+      h1 {
+      padding: 10px 0;
+      font-size: 32px;
+      font-weight: 300;
+      text-align: center;
+      }
+      hr {
+      color: #a9a9a9;
+      opacity: 1;
+      }
+    .main-block {
+      width: 540px; 
+      min-height: 460px; 
+      padding: 10px 0;
+      margin: auto;
+      border-radius: 10px; 
+      border: solid 1px #ccc;
+      box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
+      background: #ebebeb; 
+      }
+    .gender {
+      margin: 10px 0;
+      }
+    .hobi{
+        margin 20px 10;
+    }
+    .negara{
+        margin 20px 10;
+    }
+    label{
+        padding: 10px;
+    }
+    button {
+      width: 100%;
+      padding: 10px 0;
+      margin: 10px auto;
+      border-radius: 5px; 
+      border: none;
+      background: #1c87c9; 
+      font-size: 14px;
+      font-weight: 600;
+      color: #fff;
+      }
+      button:hover {
+      background: #26a9e0;
+      }
+      .spasinama{
+          margin: 29px;
+      }
+      .spasiemail{
+          margin: 29px;
+      }
+      .spasii
+      {
+          margin-left: -28px;
+      }
+      .spasihobby{
+          margin: 6px;
+      }
+      
+    </style>
+</head>
+<body>
+    <div class="main-block">
+            <h1>Registration</h1>
+            <hr>
+        <form action="" method="POST"> 
+            <br>
+            <div class="input-group">
+                <label id="icon" for="nama" name="Nama">Nama</label>
+                    <label class="spasinama">:</label>
+                    <input class="spasii" type="text" name="name" id="name"  placeholder="Nama Lengkap" required/>    
+            </div>
+            <br>
+            <div class="input-group">
+                <label for="email" name="email">Email</label>
+                    <label class="spasiemail">:</label>
+                    <input class="spasii"   type="text" name="email" id="email" placeholder="Email">        
+          </div>
+          <br>
+            <div class="input-group">
+                <label for="password" name="password">Password</label>       
+                    <label class="spasi" >:</label>
+                    <input class="spasi" type="password" name="password" id="password" placeholder="Password" required/>                  
+            </div>
+        <div class="gender">
+            <label for="Jenis Kelamin" name="jeniskelamin">Jenis Kelamin</label>
+                <label >:</label>
+                <input type="radio" value="none" id="Pria" name="gender" checked/>
+                <label for="Pria" class="radio">Pria</label>
+                <input type="radio" value="none" id="Wanita" name="gender" />
+                <label for="Wanita" class="radio">Wanita</label>           
+              </div>
+        
+            <label for="hobby" name="hobby">Hobby</label>
+            
+                <label class="spasihobby" >:</label>
+                <input type="checkbox">Coding <input type="checkbox">Design <input type="checkbox">Reading    
+        
+        <div class="negara">
+            <br>
+         <label for="negara">Negara</label>
+                <label >:</label>
+                <select>
+                   <option value="">Indonesia</option>
+                   <option value="">Malaysia</option>
+                   <option value="">Myanmar</option>
+                   <option value="">Singapura</option>
+                   <option value="">Papua Nugini</option>
+                   <option value="">Timor Leste</option>
+               </select>   
+            </div>
+        <br>
+        <label for="komentar">Komentar</label>
+            <label for="">:</label>
+        <textarea name="komentar" cols="30" rows="10"></textarea>     
+    <div class="button">
+        <br>
+        <button type="submit">Submit</button>
+        <hr>
+    </div>
+    </div>
+    </form>
+</body>
